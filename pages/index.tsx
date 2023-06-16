@@ -1,12 +1,14 @@
 import {useCallback} from "react";
 import styles from "./index.module.scss";
 import Image from "next/image";
-import BucketModal from "../components/BucketModal/BucketModal";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../store";
 import {setSelectedModules} from "../store/bucketList";
+import dynamic from "next/dynamic";
 
 type Props = {[x: string]: {quantity: number; price: number}};
+
+const BucketModal = dynamic(() => import("../components/BucketModal/BucketModal"));
 
 export default function HomePage({data}: Props): JSX.Element {
   const {selectedModules} = useSelector((state: RootState) => state.bucketList);
