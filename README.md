@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Open https://twntytesttask.netlify.app or follow the steps below
+Open https://nlunych-portfolio-project.netlify.app or follow the steps below
 
 First, run the development server:
 
